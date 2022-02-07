@@ -1,0 +1,996 @@
+fileFormatVersion: 2
+guid: 5f5f1fdb631c64743b103680c5d2ad67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6812385239413094849
+    second: RobotPersonaje_0
+  - first:
+      213: 1174480870049477521
+    second: RobotPersonaje_1
+  - first:
+      213: -33857770023441553
+    second: RobotPersonaje_2
+  - first:
+      213: -1802546366804010015
+    second: RobotPersonaje_3
+  - first:
+      213: -3394445644079238060
+    second: RobotPersonaje_4
+  - first:
+      213: 82967059468114493
+    second: RobotPersonaje_5
+  - first:
+      213: 1930466648032402850
+    second: RobotPersonaje_6
+  - first:
+      213: -8364198977506231227
+    second: RobotPersonaje_7
+  - first:
+      213: 8555574278849756590
+    second: RobotPersonaje_8
+  - first:
+      213: -4086820207670853495
+    second: RobotPersonaje_9
+  - first:
+      213: 8282135719632174511
+    second: RobotPersonaje_10
+  - first:
+      213: 2101334634577952314
+    second: RobotPersonaje_11
+  - first:
+      213: -1283079524117211715
+    second: RobotPersonaje_12
+  - first:
+      213: 1667040021170748427
+    second: RobotPersonaje_13
+  - first:
+      213: -2054920002531287825
+    second: RobotPersonaje_14
+  - first:
+      213: 5406797942466826786
+    second: RobotPersonaje_15
+  - first:
+      213: -2786394090536296970
+    second: RobotPersonaje_16
+  - first:
+      213: -4726745298755843518
+    second: RobotPersonaje_17
+  - first:
+      213: 8103914862894016995
+    second: RobotPersonaje_18
+  - first:
+      213: -3669677375695597557
+    second: RobotPersonaje_19
+  - first:
+      213: -2063813531550471801
+    second: RobotPersonaje_20
+  - first:
+      213: 2715660870221160021
+    second: RobotPersonaje_21
+  - first:
+      213: 1907749030228993135
+    second: RobotPersonaje_22
+  - first:
+      213: 4857615039229702992
+    second: RobotPersonaje_23
+  - first:
+      213: -2919482556408919856
+    second: RobotPersonaje_24
+  - first:
+      213: -1146787741617082028
+    second: RobotPersonaje_25
+  - first:
+      213: 5814735776819852910
+    second: RobotPersonaje_26
+  - first:
+      213: 7430831453721412849
+    second: RobotPersonaje_27
+  - first:
+      213: -4867711958918837283
+    second: RobotPersonaje_28
+  - first:
+      213: -2018595610166835513
+    second: RobotPersonaje_29
+  - first:
+      213: -5623984046705197738
+    second: RobotPersonaje_30
+  - first:
+      213: -5526714776123198641
+    second: RobotPersonaje_31
+  - first:
+      213: 3736011721741022175
+    second: RobotPersonaje_32
+  - first:
+      213: 7350524230873255108
+    second: RobotPersonaje_33
+  - first:
+      213: 1756006770998880346
+    second: RobotPersonaje_34
+  - first:
+      213: -8916578869142692370
+    second: RobotPersonaje_35
+  - first:
+      213: 2878289155560232532
+    second: RobotPersonaje_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RobotPersonaje_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 590
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f360ba3e7bb8571a0800000000000000
+      internalID: -6812385239413094849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 590
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1937acee0289c4010800000000000000
+      internalID: 1174480870049477521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 590
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6baddc9986b78ff0800000000000000
+      internalID: -33857770023441553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 590
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebd97331a11cf6e0800000000000000
+      internalID: -1802546366804010015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 590
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454f847dba184e0d0800000000000000
+      internalID: -3394445644079238060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 590
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ad7abd912c62100800000000000000
+      internalID: 82967059468114493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 527
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2add5b630356aca10800000000000000
+      internalID: 1930466648032402850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_7
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 528
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c3e0b68556ceb80800000000000000
+      internalID: -8364198977506231227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 462
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadfe4c2a718bb670800000000000000
+      internalID: 8555574278849756590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 464
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98004ec8ca2b847c0800000000000000
+      internalID: -4086820207670853495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 464
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadff3e6e8e00f270800000000000000
+      internalID: 8282135719632174511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 398
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e7e3087b0792d10800000000000000
+      internalID: 2101334634577952314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 398
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db59a6a88f5913ee0800000000000000
+      internalID: -1283079524117211715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 398
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cfd302114822710800000000000000
+      internalID: 1667040021170748427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 398
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec174725257b73e0800000000000000
+      internalID: -2054920002531287825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 334
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2225c0d051ec80b40800000000000000
+      internalID: 5406797942466826786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 334
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd165d665db459d0800000000000000
+      internalID: -2786394090536296970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 334
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a09e3b13a376eb0800000000000000
+      internalID: -4726745298755843518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_18
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 334
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e96ec4a1a3e67070800000000000000
+      internalID: 8103914862894016995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 271
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00506d9edfa21dc0800000000000000
+      internalID: -3669677375695597557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_20
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 272
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7892a41178cdb53e0800000000000000
+      internalID: -2063813531550471801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_21
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 272
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ed5fb5c27ffa520800000000000000
+      internalID: 2715660870221160021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_22
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 272
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f642563a2afa97a10800000000000000
+      internalID: 1907749030228993135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 272
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053b1e43427b96340800000000000000
+      internalID: 4857615039229702992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_24
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 273
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d80c41451aeb77d0800000000000000
+      internalID: -2919482556408919856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 206
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451342cff9ac510f0800000000000000
+      internalID: -1146787741617082028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_26
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 206
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e663a18916712b050800000000000000
+      internalID: 5814735776819852910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_27
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 206
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f44dd046dd9f1760800000000000000
+      internalID: 7430831453721412849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_28
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 206
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbc8bb73c9627cb0800000000000000
+      internalID: -4867711958918837283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_29
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 142
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6c7deccf18cf3e0800000000000000
+      internalID: -2018595610166835513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 142
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d3ca18e4893f1b0800000000000000
+      internalID: -5623984046705197738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 142
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f433642613a2d43b0800000000000000
+      internalID: -5526714776123198641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3b11fdddaf8d330800000000000000
+      internalID: 3736011721741022175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 14
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc0a1ed7de420660800000000000000
+      internalID: 7350524230873255108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_34
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 14
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58a190cad69e5810800000000000000
+      internalID: 1756006770998880346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_35
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 14
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeddef4b2c2f14480800000000000000
+      internalID: -8916578869142692370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotPersonaje_36
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 14
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456d606bcbcb1f720800000000000000
+      internalID: 2878289155560232532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
