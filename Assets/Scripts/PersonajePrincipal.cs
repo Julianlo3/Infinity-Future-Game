@@ -16,15 +16,16 @@ public class PersonajePrincipal : MonoBehaviour
         fuerzaSalto = 150; 
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        transform.position=(new Vector3(-7.64f, -3.36f, 0));
     }
 
    
     void Update()
     {
-        direccionX = Input.GetAxis("Horizontal");
+       // direccionX = Input.GetAxis("Horizontal");
 
         // transform.position += new Vector3(direccionX * velocidad, 0, 0); //método para que el personaje se mueva
-        transform.Translate(Vector3.right * direccionX * velocidad); // método para que el personaje se mueva
+        //transform.Translate(Vector3.right * direccionX * velocidad); // método para que el personaje se mueva
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
