@@ -15,6 +15,7 @@ public class PersonajePrincipal : MonoBehaviour
         velocidad = 0.1f;// se inicializa la velocidad al iniciar el juego
         fuerzaSalto = 150; 
         rigidbody2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
    
@@ -28,7 +29,7 @@ public class PersonajePrincipal : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Saltar();
-            animator.SetBool("AccionSaltar",true);
+            animator.SetBool("AccionSaltar", true);
             
         }
     }
