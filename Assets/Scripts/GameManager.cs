@@ -32,9 +32,6 @@ public class GameManager : MonoBehaviour
 
 		distancia = 0;
 		// crear suelo
-
-		
-
 		for (int i = 0; i < 21; i++)
 		{
 			Suelos.Add(Instantiate(Suelo, new Vector2(-10 + i, -5), Quaternion.identity));
@@ -76,8 +73,8 @@ public class GameManager : MonoBehaviour
 				tiempoPuntaje = false;
 				Invoke("enfriamiento", 0.2f);
 			}
-			
-			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime;
+
+			// mover suelo
 
 
 			if (tiempoSuelo == true)
@@ -110,11 +107,14 @@ public class GameManager : MonoBehaviour
 				}
 			}
 
-			//mover suelo
-				
-		
+
+
+
 			// mover mapa
-			
+			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime;
+
+			// techo
+
 			for (int i = 0; i < Techos.Count; i++)
 			{
 				if (Techos[i].transform.position.x <= -3)
@@ -129,7 +129,6 @@ public class GameManager : MonoBehaviour
 			{
 				if (Policias[i].transform.position.x <= -15)
 				{
-					PersonajePrincipal personaje = new PersonajePrincipal();
 
 					float randomx = Random.Range(11, 18);
 					float randomy = Random.Range(-4, 4);
