@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	//--------------------
@@ -11,19 +11,30 @@ public class GameManager : MonoBehaviour
 	public GameObject Suelo;
 	public GameObject Techo;
 	public GameObject Policia;
+	public GameObject Muerte;
 	public List<GameObject> Suelos;
 	public List<GameObject> Techos;
 	public List<GameObject> Policias;
-
+	public Text score;
+	public int Hueco;
 	public GameObject MenuGameOver;
 	public bool gameOver = false;
 	public bool start = false;
+	public double distancia;
+	public bool tiempoPuntaje = true;
+	public bool tiempoSuelo = true;
 
 	//----------------------
 	// Start is called before the first frame update
 	void Start()
 	{
+		Muerte.transform.position = new Vector2(-7f, -7f);
+
+		distancia = 0;
 		// crear suelo
+
+		
+
 		for (int i = 0; i < 21; i++)
 		{
 			Suelos.Add(Instantiate(Suelo, new Vector2(-10 + i, -5), Quaternion.identity));
@@ -34,7 +45,7 @@ public class GameManager : MonoBehaviour
 			Techos.Add(Instantiate(Techo, new Vector2(0.5f + i, 8.5f), Quaternion.identity));
 		}
 		// crear policias
-		for (int i = 0; i < 1; i++)
+		for (int i = 0; i < 3; i++)
 		{
 			Policias.Add(Instantiate(Policia, new Vector2(12 + i, 6), Quaternion.identity));
 		}
@@ -43,9 +54,9 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
 		start = true;
-
+		score.text = "Puntaje " + distancia;
+		
 		if (gameOver == true)
 		{
 			MenuGameOver.SetActive(true);
@@ -59,17 +70,51 @@ public class GameManager : MonoBehaviour
 		if (start == true && gameOver == false)
 		{
 
+			if (tiempoPuntaje == true)
+			{
+				distancia++;
+				tiempoPuntaje = false;
+				Invoke("enfriamiento", 0.2f);
+			}
+			
 			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime;
 
-			// mover mapa
-			for (int i = 0; i < Suelos.Count; i++)
+
+			if (tiempoSuelo == true)
 			{
-				if (Suelos[i].transform.position.x <= -10)
+				for (int i = 0; i < Suelos.Count; i++)
 				{
-					Suelos[i].transform.position = new Vector3(10, -5, 0);
+					if (Suelos[i].transform.position.x <= -10)
+					{
+						Suelos[i].transform.position = new Vector3(10, -5, 0);
+					}
+					Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 4;
 				}
-				Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 2;
+				if( distancia > 20)
+                {
+					tiempoSuelo = false;
+				}
+				
+				Invoke("enfriamiento2", 4f);
 			}
+
+			if (tiempoSuelo == false)
+            {
+				for (int i = 0; i < Suelos.Count; i++)
+				{
+					if (Suelos[i].transform.position.x <= -10)
+					{
+						Suelos[i].transform.position = new Vector3(10, -8, 0);
+					}
+					Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 4;
+				}
+			}
+
+			//mover suelo
+				
+		
+			// mover mapa
+			
 			for (int i = 0; i < Techos.Count; i++)
 			{
 				if (Techos[i].transform.position.x <= -3)
@@ -90,8 +135,18 @@ public class GameManager : MonoBehaviour
 					float randomy = Random.Range(-4, 4);
 					Policias[i].transform.position = new Vector3(randomx, randomy, 0);
 				}
-				Policias[i].transform.position = Policias[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 11;
+				Policias[i].transform.position = Policias[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 10;
 			}
 		}
 	}
+
+	 void enfriamiento()
+    {
+			tiempoPuntaje = true;
+    }
+		void enfriamiento2()
+        {
+			tiempoSuelo = true;
+        }
+
 }

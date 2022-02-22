@@ -7,11 +7,14 @@ public class PersonajePrincipal : MonoBehaviour
     private Rigidbody2D rigidbody2D; // variable para las fisicas del personaje
     private Animator animator; // variable para controlar la animacion
     public float fuerzaSalto; // variable para la fuerza del salto
+    public float speed;
+    public float dirX;
     public GameManager gameManager;
     Vector3 posicionInicial;
 
     void Start()
     {
+        speed = 0.2f;
         fuerzaSalto = 150;
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -50,5 +53,6 @@ public class PersonajePrincipal : MonoBehaviour
     {
         return posicionInicial;
     }
+
 
 }
