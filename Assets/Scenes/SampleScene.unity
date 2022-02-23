@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fondo: {fileID: 1547737629}
   velocidadFondo: 0.3
+  velocidadSuelo: 0
   Suelo: {fileID: 6261464791166226439, guid: 1750f1be4ec68d449a57d4b990ea74ef, type: 3}
   Techo: {fileID: 392517298953974269, guid: 6398571b200119e4d90f864a07570246, type: 3}
   Policia: {fileID: 6849901521887159016, guid: 55642a6521bd01e499f4c27e75afd033, type: 3}
@@ -177,13 +178,16 @@ MonoBehaviour:
   Techos: []
   Policias: []
   score: {fileID: 468745822}
-  Hueco: 0
+  Hueco: 1
   MenuGameOver: {fileID: 1860778629}
   gameOver: 0
   start: 0
   distancia: 0
   tiempoPuntaje: 1
   tiempoSuelo: 1
+  subirVelocidad: 0
+  Xcarro: 0
+  randoms: 0
 --- !u!82 &44095870
 AudioSource:
   m_ObjectHideFlags: 0
@@ -685,11 +689,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758322001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.19, y: -1.56, z: 0}
+  m_LocalPosition: {x: -1.83, y: -1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &758322007
 Animator:
@@ -1034,11 +1038,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547737627}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18, y: 11, z: 1}
+  m_LocalPosition: {x: 0.0357, y: 0.0063, z: 0}
+  m_LocalScale: {x: 18.064419, y: 10.151132, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1662486729
 GameObject:

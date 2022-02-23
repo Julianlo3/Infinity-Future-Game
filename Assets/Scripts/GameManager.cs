@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 	//--------------------
 	public Renderer Fondo; // La  variable que se usa para manejar el fondo
 	public float velocidadFondo;
+	public float velocidadSuelo;
 	public GameObject Suelo;
 	public GameObject Techo;
 	public GameObject Policia;
@@ -16,20 +17,28 @@ public class GameManager : MonoBehaviour
 	public List<GameObject> Techos;
 	public List<GameObject> Policias;
 	public Text score;
-	public int Hueco;
+	public bool Hueco = true;
 	public GameObject MenuGameOver;
 	public bool gameOver = false;
 	public bool start = false;
 	public double distancia;
 	public bool tiempoPuntaje = true;
 	public bool tiempoSuelo = true;
+	public bool subirVelocidad;
+	public int Xcarro;
+	public int randoms;
+
 
 	//----------------------
 	// Start is called before the first frame update
 	void Start()
 	{
-		Muerte.transform.position = new Vector2(-7f, -7f);
 
+		Xcarro = -5;
+		subirVelocidad = true;
+		velocidadSuelo = 5;
+		Muerte.transform.position = new Vector2(-7f, -7f);
+		velocidadFondo = 0.3f;
 		distancia = 0;
 		// crear suelo
 		for (int i = 0; i < 21; i++)
@@ -51,6 +60,7 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+
 		start = true;
 		score.text = "Puntaje " + distancia;
 		
@@ -63,52 +73,63 @@ public class GameManager : MonoBehaviour
 			}
 		}
 
+			if (Hueco == true)
+        {
+			randoms = Random.Range(1, 3);
+			Hueco = false;
+			Invoke("enfriamiento4", 5f);
+		}
+		
+			if (randoms == 1)
+			{
+				Xcarro = -5;
+			}
+			else if (randoms == 2)
+			{
+				Xcarro = -8;
+			}
+			Hueco = false;
+
+			
+		
+
+
+
 
 		if (start == true && gameOver == false)
 		{
 
+		
+
+
 			if (tiempoPuntaje == true)
 			{
+				
 				distancia++;
 				tiempoPuntaje = false;
 				Invoke("enfriamiento", 0.2f);
 			}
 
+			if (subirVelocidad == true)
+			{
+				velocidadFondo += 0.02f;
+				velocidadSuelo += 0.2f;
+
+				subirVelocidad = false;
+				Invoke("enfriamiento3", 5f);
+			}
+			
+
 			// mover suelo
 
-
-			if (tiempoSuelo == true)
+			for (int i = 0; i < Suelos.Count; i++)
 			{
-				for (int i = 0; i < Suelos.Count; i++)
+				if (Suelos[i].transform.position.x <= -10)
 				{
-					if (Suelos[i].transform.position.x <= -10)
-					{
-						Suelos[i].transform.position = new Vector3(10, -5, 0);
-					}
-					Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 4;
+					Suelos[i].transform.position = new Vector3(10, Xcarro, 0);
 				}
-				if( distancia > 20)
-                {
-					tiempoSuelo = false;
-				}
-				
-				Invoke("enfriamiento2", 4f);
+				Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 2;
 			}
-
-			if (tiempoSuelo == false)
-            {
-				for (int i = 0; i < Suelos.Count; i++)
-				{
-					if (Suelos[i].transform.position.x <= -10)
-					{
-						Suelos[i].transform.position = new Vector3(10, -8, 0);
-					}
-					Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 4;
-				}
-			}
-
-
-
 
 			// mover mapa
 			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime;
@@ -139,13 +160,25 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+
+
 	 void enfriamiento()
     {
 			tiempoPuntaje = true;
     }
 		void enfriamiento2()
-        {
+    {
 			tiempoSuelo = true;
-        }
+	}
+
+	 void enfriamiento3()
+	{
+		subirVelocidad = true;
+	}
+
+	void enfriamiento4()
+    {
+		Hueco = true;
+    }
 
 }
