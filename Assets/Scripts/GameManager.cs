@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
 	public GameObject Policia;
 	public GameObject Muerte;
 	public List<GameObject> Suelos;
-	public List<GameObject> Techos;
 	public List<GameObject> Policias;
 	public Text score;
 	public bool Hueco = true;
@@ -27,16 +26,21 @@ public class GameManager : MonoBehaviour
 	public bool subirVelocidad;
 	public int Xcarro;
 	public int randoms;
-
+	public int velocidadObstaculo;
+	public bool policiaNuevo;
+	public int numeroPolicia;
 
 	//----------------------
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		numeroPolicia = 0;
+		policiaNuevo = true;
+		velocidadFondo = 10;
+		Techo.transform.position = new Vector2(-4.7f, -3.3f);
 		Xcarro = -5;
 		subirVelocidad = true;
-		velocidadSuelo = 5;
+		velocidadSuelo = 7;
 		Muerte.transform.position = new Vector2(-7f, -7f);
 		velocidadFondo = 0.3f;
 		distancia = 0;
@@ -45,16 +49,7 @@ public class GameManager : MonoBehaviour
 		{
 			Suelos.Add(Instantiate(Suelo, new Vector2(-10 + i, -5), Quaternion.identity));
 		}
-		// crear techo
-		for (int i = 0; i < 2; i++)
-		{
-			Techos.Add(Instantiate(Techo, new Vector2(0.5f + i, 8.5f), Quaternion.identity));
-		}
-		// crear policias
-		for (int i = 0; i < 3; i++)
-		{
-			Policias.Add(Instantiate(Policia, new Vector2(12 + i, 6), Quaternion.identity));
-		}
+
 	}
 
 	// Update is called once per frame
@@ -92,16 +87,8 @@ public class GameManager : MonoBehaviour
 
 			
 		
-
-
-
-
 		if (start == true && gameOver == false)
 		{
-
-		
-
-
 			if (tiempoPuntaje == true)
 			{
 				
@@ -112,6 +99,7 @@ public class GameManager : MonoBehaviour
 
 			if (subirVelocidad == true)
 			{
+				velocidadObstaculo += 1;
 				velocidadFondo += 0.02f;
 				velocidadSuelo += 0.2f;
 
@@ -134,16 +122,21 @@ public class GameManager : MonoBehaviour
 			// mover mapa
 			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime;
 
-			// techo
+			// crear policias
 
-			for (int i = 0; i < Techos.Count; i++)
+			if (policiaNuevo == true)
 			{
-				if (Techos[i].transform.position.x <= -3)
+
+				for (int i = 0; i < 1; i++)
 				{
-					Techos[i].transform.position = new Vector3(0.5f, 8.5f, 0);
+					Policias.Add(Instantiate(Policia, new Vector2(12 + i, 6), Quaternion.identity));
+					numeroPolicia += 1;
+					policiaNuevo = false;
+					Invoke("enfriamiento5", 20f);
 				}
-				Techos[i].transform.position = Techos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 2;
+
 			}
+
 
 			//Obstaculos (policias)
 			for (int i = 0; i < Policias.Count; i++)
@@ -152,10 +145,10 @@ public class GameManager : MonoBehaviour
 				{
 
 					float randomx = Random.Range(11, 18);
-					float randomy = Random.Range(-4, 4);
+					float randomy = Random.Range(-4, 5);
 					Policias[i].transform.position = new Vector3(randomx, randomy, 0);
 				}
-				Policias[i].transform.position = Policias[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 10;
+				Policias[i].transform.position = Policias[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * velocidadObstaculo;
 			}
 		}
 	}
@@ -179,6 +172,11 @@ public class GameManager : MonoBehaviour
 	void enfriamiento4()
     {
 		Hueco = true;
+    }
+
+	void enfriamiento5()
+    {
+		policiaNuevo = true;
     }
 
 }

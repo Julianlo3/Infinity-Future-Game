@@ -14,8 +14,9 @@ public class PersonajePrincipal : MonoBehaviour
 
     void Start()
     {
+
         speed = 0.2f;
-        fuerzaSalto = 150;
+        fuerzaSalto = 8;
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         transform.position = (new Vector3(-7.64f, -3.36f, 0));
@@ -24,11 +25,19 @@ public class PersonajePrincipal : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) &&  gameManager.gameOver == false)
+        if (Input.GetButton("Jump") &&  gameManager.gameOver == false)
         {
             Saltar();
             animator.SetBool("AccionSaltar", true);
+            animator.SetBool("EnSuelo", false);
+            animator.SetBool("Volando", true);
         }
+        else
+        {
+            animator.SetBool("AccionSaltar", false);
+            animator.SetBool("Volando",false);
+        }
+
     }
 
     public void Saltar()
@@ -41,6 +50,7 @@ public class PersonajePrincipal : MonoBehaviour
         if (collision.gameObject.tag == "Suelo")
         {
             animator.SetBool("AccionSaltar", false);
+            animator.SetBool("EnSuelo", true);
         }
         if (collision.gameObject.tag == "Obstaculo")
         {
