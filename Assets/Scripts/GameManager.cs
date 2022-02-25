@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	//--------------------
+	private string mantenerPuntuacion = "distancia";
+
+
 	public Renderer Fondo; // La  variable que se usa para manejar el fondo
 	public float velocidadFondo;
 	public float velocidadSuelo;
@@ -13,14 +16,16 @@ public class GameManager : MonoBehaviour
 	public GameObject Techo;
 	public GameObject Policia;
 	public GameObject Muerte;
+	public GameObject CambiarEscena;
 	public List<GameObject> Suelos;
 	public List<GameObject> Policias;
 	public Text score;
+	public Text recordJugador;
 	public bool Hueco = true;
 	public GameObject MenuGameOver;
 	public bool gameOver = false;
 	public bool start = false;
-	public double distancia;
+	public int distancia;
 	public bool tiempoPuntaje = true;
 	public bool tiempoSuelo = true;
 	public bool subirVelocidad;
@@ -29,11 +34,23 @@ public class GameManager : MonoBehaviour
 	public int velocidadObstaculo;
 	public bool policiaNuevo;
 	public int numeroPolicia;
-
+	public int record;
 	//----------------------
 	// Start is called before the first frame update
-	void Start()
+	private void Awake()
 	{
+		cargarDatos();
+	}
+
+   
+
+    void Start()
+	{
+
+
+		CambiarEscena.transform.localScale = new Vector2(1,1);
+		CambiarEscena.transform.position = new Vector3(19, -1.13f, -1);
+		record = PlayerPrefs.GetInt("GuardarPuntaje");
 		numeroPolicia = 0;
 		policiaNuevo = true;
 		velocidadFondo = 10;
@@ -49,15 +66,22 @@ public class GameManager : MonoBehaviour
 		{
 			Suelos.Add(Instantiate(Suelo, new Vector2(-10 + i, -5), Quaternion.identity));
 		}
-
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+        if (distancia > record)
+        {
+			record = distancia;
+			PlayerPrefs.SetInt("GuardarPuntaje", record);
+		}
+
+		recordJugador.text = "Record" + record;
 
 		start = true;
 		score.text = "Puntaje " + distancia;
+		
 		
 		if (gameOver == true)
 		{
@@ -67,6 +91,23 @@ public class GameManager : MonoBehaviour
 				SceneManager.LoadScene(1);
 			}
 		}
+
+		if (distancia > 100)
+        {
+			for (int i = 0; i < 1; i++)
+			{
+				if (CambiarEscena.transform.position.x <= -18)
+				{
+					CambiarEscena.transform.position = new Vector3(19, -1.13f, -1);
+				}
+				CambiarEscena.transform.position = CambiarEscena.transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * velocidadSuelo;
+				Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime * velocidadFondo;
+			}
+
+
+		}
+
+
 
 			if (Hueco == true)
         {
@@ -85,8 +126,6 @@ public class GameManager : MonoBehaviour
 			}
 			Hueco = false;
 
-			
-		
 		if (start == true && gameOver == false)
 		{
 			if (tiempoPuntaje == true)
@@ -120,7 +159,10 @@ public class GameManager : MonoBehaviour
 			}
 
 			// mover mapa
-			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime;
+			Fondo.material.mainTextureOffset = Fondo.material.mainTextureOffset + new Vector2(velocidadFondo, 0) * Time.deltaTime * velocidadFondo;
+
+		
+
 
 			// crear policias
 
@@ -146,14 +188,38 @@ public class GameManager : MonoBehaviour
 
 					float randomx = Random.Range(11, 18);
 					float randomy = Random.Range(-4, 5);
-					Policias[i].transform.position = new Vector3(randomx, randomy, 0);
+					Policias[i].transform.position = new Vector3(randomx, randomy, -1);
 				}
 				Policias[i].transform.position = Policias[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * velocidadObstaculo;
 			}
 		}
 	}
 
+	private void OnDestroy()
+	{
+		mantenerDatos();
+	}
+	private void mantenerDatos()
+    {
+		PlayerPrefs.SetInt(mantenerPuntuacion, distancia);
+    }
+	private void cargarDatos()
+    {
+		distancia = PlayerPrefs.GetInt(mantenerPuntuacion, distancia);
+    }
 
+	private void RefreshUI()
+    {
+		
+    }
+
+
+    
+
+    void cambioEscena()
+    {
+
+    }
 
 	 void enfriamiento()
     {

@@ -19,7 +19,7 @@ public class PersonajePrincipal : MonoBehaviour
         fuerzaSalto = 8;
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        transform.position = (new Vector3(-7.64f, -3.36f, 0));
+        transform.position = (new Vector3(-7.64f, -3.36f, -2));
     }
 
 
