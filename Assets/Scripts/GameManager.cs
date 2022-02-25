@@ -188,7 +188,7 @@ public class GameManager : MonoBehaviour
 
 					float randomx = Random.Range(11, 18);
 					float randomy = Random.Range(-4, 5);
-					Policias[i].transform.position = new Vector3(randomx, randomy, -1);
+					Policias[i].transform.position = new Vector3(randomx, randomy, -2);
 				}
 				Policias[i].transform.position = Policias[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * velocidadObstaculo;
 			}
