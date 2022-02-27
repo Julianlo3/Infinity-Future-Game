@@ -7,6 +7,7 @@ public class Escenario : MonoBehaviour
     public float velocidadSuelo;
     public GameObject Suelo;
     public GameObject Techo;
+    public GameObject Limite;
     public List<GameObject> Suelos;
     public bool Hueco = true;
     public bool tiempoSuelo = true;
@@ -16,8 +17,9 @@ public class Escenario : MonoBehaviour
 
     void Start()
     {
+        Techo.transform.position = new Vector2(-7.5f, 5.5f);
+        Limite.transform.position = new Vector2(-10, 0);
         subirVelocidad = true;
-        Techo.transform.position = new Vector2(-4.7f, -3.3f);
         XSuelo = -5;
         velocidadSuelo = 7;
         // crear suelo
@@ -26,7 +28,6 @@ public class Escenario : MonoBehaviour
             Suelos.Add(Instantiate(Suelo, new Vector2(-10 + i, -5), Quaternion.identity));
         }
     }
-
     void Update()
     {
         if (Hueco == true)

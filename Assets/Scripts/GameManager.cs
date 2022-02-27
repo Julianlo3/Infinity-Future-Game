@@ -6,18 +6,16 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	//--------------------
-	public PersonajePrincipal personajePrincipal;
-	public FondosManager fondosManager;
 	public Escenario escenario;
-	public Puntuacion puntuacion;
 	public GameObject Muerte;
 	public GameObject MenuGameOver;
 	public bool gameOver = false;
 	public bool start = false;
-	public bool cambiarFondo;
+	public int velocidad;
 	//----------------------
     void Start()
 	{
+		velocidad = 1;
 		MenuGameOver.SetActive(false);
 		start = true;
 		gameOver = false;
