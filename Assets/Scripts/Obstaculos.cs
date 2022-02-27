@@ -8,7 +8,7 @@ public class Obstaculos : MonoBehaviour
     public GameObject Policia;
     public GameObject Nave;
     public List<GameObject> Naves;
-    public Fondo fondo;
+    public FondosManager fondo;
     public List<GameObject> Policias;
     public bool policiaNuevo;
     public int numeroPolicia;
@@ -71,10 +71,6 @@ public class Obstaculos : MonoBehaviour
                 }
                 Naves[i].transform.position = Naves[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * velocidadObstaculo;
             }
-
-
-
-
         }
     }
 

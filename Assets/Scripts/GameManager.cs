@@ -7,13 +7,14 @@ public class GameManager : MonoBehaviour
 {
 	//--------------------
 	public PersonajePrincipal personajePrincipal;
+	public FondosManager fondosManager;
 	public Escenario escenario;
 	public Puntuacion puntuacion;
-	public Fondo tunel;
 	public GameObject Muerte;
 	public GameObject MenuGameOver;
 	public bool gameOver = false;
 	public bool start = false;
+	public bool cambiarFondo;
 	//----------------------
     void Start()
 	{
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+       
 		if (gameOver == true)
 		{
 			MenuGameOver.SetActive(true);
