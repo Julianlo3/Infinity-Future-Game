@@ -14,7 +14,6 @@ public class PersonajePrincipal : MonoBehaviour
 
     void Start()
     {
-
         speed = 0.2f;
         fuerzaSalto = 8;
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -25,6 +24,13 @@ public class PersonajePrincipal : MonoBehaviour
 
     void Update()
     {
+
+        if (gameManager.gameOver == true && Input.GetKeyDown(KeyCode.X))
+        {
+            Destroy(gameObject);
+        }
+
+
         if (Input.GetButton("Jump") &&  gameManager.gameOver == false)
         {
             Saltar();
@@ -63,6 +69,4 @@ public class PersonajePrincipal : MonoBehaviour
     {
         return posicionInicial;
     }
-
-
 }
