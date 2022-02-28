@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class Escenario : MonoBehaviour
 {
-    public float velocidadSuelo;
+    public GameManager gameManager;
     public GameObject Suelo;
     public GameObject Techo;
     public GameObject Limite;
+    public GameObject Limite1;
     public List<GameObject> Suelos;
     public bool Hueco = true;
     public bool tiempoSuelo = true;
     public int XSuelo;
     public int randoms;
-    public bool subirVelocidad;
 
     void Start()
     {
-        Techo.transform.position = new Vector2(-7.5f, 5.5f);
-        Limite.transform.position = new Vector2(-10, 0);
-        subirVelocidad = true;
+        Techo.transform.position = new Vector2(-4.4f, 5.5f);
+        Limite1.transform.localScale = new Vector2(1, 3);
+        Limite.transform.position = new Vector2(-10.5f, 0);
+        Limite1.transform.localScale = new Vector2(1,10);
+        Limite1.transform.localScale = new Vector2(8, -6);
         XSuelo = -5;
-        velocidadSuelo = 7;
         // crear suelo
         for (int i = 0; i < 21; i++)
         {
@@ -46,13 +47,6 @@ public class Escenario : MonoBehaviour
             XSuelo = -8;
         }
 
-        if (subirVelocidad == true)
-        {
-            velocidadSuelo += 0.2f;
-
-            subirVelocidad = false;
-            Invoke("enfriamiento3", 5f);
-        }
 
         // mover suelo
 
@@ -62,7 +56,7 @@ public class Escenario : MonoBehaviour
             {
                 Suelos[i].transform.position = new Vector3(10, XSuelo, 0);
             }
-            Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 2;
+            Suelos[i].transform.position = Suelos[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * gameManager.velocidadSuelo;
         }
 
        
@@ -73,10 +67,6 @@ public class Escenario : MonoBehaviour
         tiempoSuelo = true;
     }
 
-    void enfriamiento3()
-    {
-        subirVelocidad = true;
-    }
 
     void enfriamiento4()
     {

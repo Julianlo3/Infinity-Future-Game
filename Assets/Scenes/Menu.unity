@@ -3155,7 +3155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fondo: {fileID: 917740430}
   velocidadFondo: 0
-  Suelo: {fileID: 6261464791166226439, guid: 1750f1be4ec68d449a57d4b990ea74ef, type: 3}
+  Suelo: {fileID: 3653618062076798852, guid: 1750f1be4ec68d449a57d4b990ea74ef, type: 3}
   Suelos: []
 --- !u!82 &1055154066
 AudioSource:
