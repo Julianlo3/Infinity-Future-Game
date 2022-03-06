@@ -153,7 +153,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &44095869
 MonoBehaviour:
@@ -591,7 +591,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758322001
 GameObject:
@@ -830,7 +830,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &795723295
 MonoBehaviour:
@@ -992,7 +992,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1201646103229564699, guid: 6398571b200119e4d90f864a07570246, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1201646103229564699, guid: 6398571b200119e4d90f864a07570246, type: 3}
       propertyPath: m_LocalScale.y
@@ -1717,7 +1717,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0dfcd37aa5a305b4a9d87e9f49202429, type: 2}
+  - {fileID: 2100000, guid: f6b53d7e5af0658459817fc4e008121b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1759,7 +1759,7 @@ Transform:
   m_LocalScale: {x: 17.5384, y: 9.7632, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1829654322
 GameObject:
@@ -1944,15 +1944,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 44095869}
+  puntuacion: {fileID: 1662486733}
+  Bandera: {fileID: 8977446060149193478, guid: cf50c16e9af9a374c9aa3d53a66daf07, type: 3}
+  fondosManager: {fileID: 705036868}
   Suelo: {fileID: 3653618062076798852, guid: 1750f1be4ec68d449a57d4b990ea74ef, type: 3}
+  Suelo2: {fileID: 6082273941677117199, guid: 0eddf39dfee3e9048bf35841ab4ffa64, type: 3}
+  Suelo3: {fileID: 1753616783096911612, guid: d060c0de7c5773d4493fac71d9b3fd26, type: 3}
   Techo: {fileID: 4073330708253295505, guid: 6398571b200119e4d90f864a07570246, type: 3}
   Limite: {fileID: 1293794087}
   Limite1: {fileID: 1547737627}
   Suelos: []
+  Suelos2: []
+  Suelos3: []
   Hueco: 1
   tiempoSuelo: 1
-  XSuelo: 0
+  YSuelo: 0
   randoms: 0
+  nuevoRecord: 0
 --- !u!4 &1850171297
 Transform:
   m_ObjectHideFlags: 0
@@ -2096,7 +2104,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cdc46995aee9594cadd6a383f480ab9, type: 2}
+  - {fileID: 2100000, guid: 728b698acb7ee0f42b17ef2c5d9f70b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2138,7 +2146,7 @@ Transform:
   m_LocalScale: {x: 18.538166, y: 10.238726, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2107271115
 PrefabInstance:
@@ -2149,7 +2157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4318927753025814131, guid: cef0b1b2ef376d246a73a694de20aa24, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4318927753025814131, guid: cef0b1b2ef376d246a73a694de20aa24, type: 3}
       propertyPath: m_LocalScale.x

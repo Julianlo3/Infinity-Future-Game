@@ -16,7 +16,7 @@ public class FondosManager : MonoBehaviour
     public Renderer FondoMover3;
     void Start()
     {
-        SeleccionFondo = Random.Range(1, 3);
+        SeleccionFondo = Random.Range(1, 4);
     }
     void Update()
     {
