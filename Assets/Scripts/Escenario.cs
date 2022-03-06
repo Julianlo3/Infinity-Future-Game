@@ -22,9 +22,12 @@ public class Escenario : MonoBehaviour
     public int YSuelo;
     public int randoms;
     public bool nuevoRecord;
+    public int parar;
     void Start()
     {
+        parar = 0;
         nuevoRecord = false;
+        Bandera.transform.position = new Vector3(12, 5);
         Techo.transform.position = new Vector2(-4.4f, 5.5f);
         Limite1.transform.localScale = new Vector2(1, 3);
         Limite.transform.position = new Vector2(-10.5f, 0);
@@ -95,11 +98,21 @@ public class Escenario : MonoBehaviour
             }
         }
 
-        if(nuevoRecord== true)
+    
+
+        if(puntuacion.distancia == puntuacion.record - 20)
         {
-            Bandera.transform.position = new Vector2(-4.4f, 5.5f);
+            Bandera.transform.position = new Vector3(10, 0, -2);
+            parar = 1;
         }
-        
+
+        Bandera.transform.position = Bandera.transform.position + new Vector3((gameManager.velocidadSuelo*-1), 0, 0) * Time.deltaTime * 1f * parar;
+
+        if ( Bandera.transform.position.x < -10)
+        {
+            parar = 0;
+            
+        }
 
 
 
