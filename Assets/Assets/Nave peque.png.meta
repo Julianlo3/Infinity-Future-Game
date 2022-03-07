@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 322de4e992bf450478ce31b5b4f82268
+guid: fe38f016e11282348b2d102714ba4665
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8878778901396930222
-    second: prop pack_0
+      213: 1013819460519391996
+    second: Nave peque_0
   - first:
-      213: -2600471572702807907
-    second: prop pack_1
+      213: 2646887081684753930
+    second: Nave peque_1
   - first:
-      213: 8371368251204791831
-    second: prop pack_2
+      213: -4563586151427333377
+    second: Nave peque_2
   - first:
-      213: -6698692852445879791
-    second: prop pack_3
+      213: 5734836594906691564
+    second: Nave peque_3
   - first:
-      213: 3634797311453635507
-    second: prop pack_4
+      213: 1725865883190729303
+    second: Nave peque_4
   - first:
-      213: 8113947861019611392
-    second: prop pack_5
+      213: 6061203303254238479
+    second: Nave peque_5
+  - first:
+      213: 1884917056000540877
+    second: Nave peque_6
+  - first:
+      213: 4250513119333088574
+    second: Nave peque_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,118 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: prop pack_0
+      name: Nave peque_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 81
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 251c00781ad38c480800000000000000
-      internalID: -8878778901396930222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop pack_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d983c8ce1e449ebd0800000000000000
-      internalID: -2600471572702807907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop pack_2
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 81
-        width: 47
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71e6b0132131d2470800000000000000
-      internalID: 8371368251204791831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop pack_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 33
-        width: 16
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 112e38687567903a0800000000000000
-      internalID: -6698692852445879791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop pack_4
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 160
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b32db395e4617230800000000000000
-      internalID: 3634797311453635507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: prop pack_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 17
-        width: 48
-        height: 14
+        x: 4
+        y: 10
+        width: 40
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +129,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0015d1e07988a9070800000000000000
-      internalID: 8113947861019611392
+      spriteID: cf2f2aa8d6fc11e00800000000000000
+      internalID: 1013819460519391996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 11
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ed368e6c1abb420800000000000000
+      internalID: 2646887081684753930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 11
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2284ef292eaa0c0800000000000000
+      internalID: -4563586151427333377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 10
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7f254af7b369f40800000000000000
+      internalID: 5734836594906691564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 10
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a9c8170e183f710800000000000000
+      internalID: 1725865883190729303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 11
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05a4e96a48bd1450800000000000000
+      internalID: 6061203303254238479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 11
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0ccf16312982a10800000000000000
+      internalID: 1884917056000540877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nave peque_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 10
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d7cfe692bdcfa30800000000000000
+      internalID: 4250513119333088574
       vertices: []
       indices: 
       edges: []

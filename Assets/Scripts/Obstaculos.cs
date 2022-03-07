@@ -5,50 +5,78 @@ using UnityEngine;
 public class Obstaculos : MonoBehaviour
 {
     public GameManager gameManager;
-    public Puntuacion puntuacion;
-    public GameObject Tunel;
-    public bool PasarTunel = true;
-    private int parar;
-    
+    public GameObject ParedObjeto;
+    public bool PasarPared;
+    public int parar;
+    public int posicion;
+    public int pasarPared;
     void Start()
     {
         parar = 1;
-        Tunel.transform.localScale = new Vector2(1, 1);
-        Tunel.transform.position = new Vector3(19, -1.13f, -1);
-
+        PasarPared = true;
+        ParedObjeto.transform.localScale = new Vector2(1, 1);
+        ParedObjeto.transform.position = new Vector3(15, 0, -2);
+        pasarPared = Random.Range(10, 15);
+        posicion = Random.Range(1, 4);
     }
 
 
     void Update()
     {
-        Tunel.transform.position = Tunel.transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * gameManager.velociadObstaculo * parar;
-        if(Tunel.transform.position.x <= -20)
+
+        ParedObjeto.transform.position = ParedObjeto.transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * gameManager.velociadObstaculo * parar;
+
+        switch (posicion)
+        {
+            case 1:
+                parar = 1;
+                ParedObjeto.transform.position = new Vector3(12, 1, -2);
+                posicion = 0;
+                    break;
+                
+                case 2:
+                parar = 1;
+
+                ParedObjeto.transform.position = new Vector3(12, -2, -2);
+                posicion = 0;
+                break;
+                
+
+            case 3:
+                parar = 1;
+                ParedObjeto.transform.position = new Vector3(12, -4.5f, -2);
+                posicion = 0;
+                break;
+                
+        }
+
+        if(ParedObjeto.transform.position.x <= -9.5f)
         {
             parar = 0;
         }
-        else
-        {
-            parar = 1;
-        }
         
-        //-------------- T U N E L --------------------
-        if (PasarTunel == true)
+        //-------------- P A R E D --------------------
+        if (PasarPared == true)
         {
+            
             for (int i = 0; i < 1; i++)
             {
-                if (Tunel.transform.position.x <= -18)
+                if (ParedObjeto.transform.position.x <= -9.5f)
                 {
-                    Tunel.transform.position = new Vector3(19, -1.13f, -1);
+                    ParedObjeto.transform.position = new Vector3(12, 0, -2);
                 }
             }
-            PasarTunel = false;
-            Invoke("enfriamiento", 20);
+            PasarPared = false;
+            Invoke("enfriamiento", pasarPared);
         }
         //----------------------------------------------
     }
     void enfriamiento()
     {
-        PasarTunel = true;
+        PasarPared = true;
+        pasarPared = Random.Range(10, 15);
+        posicion = Random.Range(1, 4);
+
     }
 
 

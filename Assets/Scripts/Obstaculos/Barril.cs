@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Barril : MonoBehaviour
 {
+    public Escenario escenario;
     public GameManager gameManager;
     public GameObject barril;
     public List<GameObject> Barriles;
@@ -26,7 +27,7 @@ public class Barril : MonoBehaviour
     void Update()
     {
 
-        if(gameManager.gameOver == false)
+        if (gameManager.gameOver == false)
         {
             if (Barriles.Count > 5)
             {
@@ -39,7 +40,7 @@ public class Barril : MonoBehaviour
                     barril.transform.localScale = new Vector2(1, 1);
                     Barriles.Add(Instantiate(barril, new Vector2(12 + i, 6), Quaternion.identity));
                     barrilNuevo = false;
-                    Invoke("enfriamiento", 10);
+                    Invoke("enfriamiento", 50);
                 }
             }
 
@@ -47,9 +48,9 @@ public class Barril : MonoBehaviour
             {
                 if (Barriles[i].transform.position.x <= -9.5f)
                 {
-                    Barriles[i].transform.position = new Vector3(9.5f, -4, -2);
+                    Barriles[i].transform.position = new Vector3(13, -4, -2);
                 }
-                Barriles[i].transform.position = Barriles[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * 1;
+                Barriles[i].transform.position = Barriles[i].transform.position + new Vector3(-1, 0, 0) * Time.deltaTime * gameManager.velocidadSuelo;
             }
         }
 

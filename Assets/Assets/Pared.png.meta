@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 322de4e992bf450478ce31b5b4f82268
+guid: 670cb67e7d0349f42a94d4d75e9a20b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8878778901396930222
-    second: prop pack_0
+      213: 364216455578650354
+    second: Pared_0
   - first:
-      213: -2600471572702807907
-    second: prop pack_1
+      213: 4374882054611302287
+    second: Pared_1
   - first:
-      213: 8371368251204791831
-    second: prop pack_2
+      213: 7952459339204396328
+    second: Pared_2
   - first:
-      213: -6698692852445879791
-    second: prop pack_3
+      213: -6828867406769315033
+    second: Pared_3
   - first:
-      213: 3634797311453635507
-    second: prop pack_4
+      213: 8047627086385164241
+    second: Pared_4
   - first:
-      213: 8113947861019611392
-    second: prop pack_5
+      213: 45578085424921421
+    second: Pared_5
+  - first:
+      213: -853556953616947908
+    second: Pared_6
+  - first:
+      213: -3208925131513096615
+    second: Pared_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,117 +115,138 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: prop pack_0
+      name: Pared_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 81
-        width: 48
-        height: 48
+        x: 1
+        y: 0
+        width: 30
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 251c00781ad38c480800000000000000
-      internalID: -8878778901396930222
+      spriteID: 2f60e18cfe4fd0500800000000000000
+      internalID: 364216455578650354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop pack_1
+      name: Pared_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 48
-        height: 48
+        x: 33
+        y: 0
+        width: 30
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d983c8ce1e449ebd0800000000000000
-      internalID: -2600471572702807907
+      spriteID: f87765fac04b6bc30800000000000000
+      internalID: 4374882054611302287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop pack_2
+      name: Pared_2
       rect:
         serializedVersion: 2
-        x: 49
-        y: 81
-        width: 47
-        height: 47
+        x: 65
+        y: 0
+        width: 30
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71e6b0132131d2470800000000000000
-      internalID: 8371368251204791831
+      spriteID: 825040492afcc5e60800000000000000
+      internalID: 7952459339204396328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop pack_3
+      name: Pared_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 33
-        width: 16
-        height: 47
+        x: 97
+        y: 0
+        width: 30
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 112e38687567903a0800000000000000
-      internalID: -6698692852445879791
+      spriteID: 723a541464dfa31a0800000000000000
+      internalID: -6828867406769315033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop pack_4
+      name: Pared_4
       rect:
         serializedVersion: 2
-        x: 98
-        y: 160
-        width: 12
-        height: 16
+        x: 128
+        y: 0
+        width: 32
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b32db395e4617230800000000000000
-      internalID: 3634797311453635507
+      spriteID: 1dfacc8623aeeaf60800000000000000
+      internalID: 8047627086385164241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: prop pack_5
+      name: Pared_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 17
-        width: 48
+        x: 160
+        y: 1
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b7b47f60de1a000800000000000000
+      internalID: 45578085424921421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 31
         height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -228,8 +255,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0015d1e07988a9070800000000000000
-      internalID: 8113947861019611392
+      spriteID: c35e818197e8724f0800000000000000
+      internalID: -853556953616947908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pared_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9569651389b9773d0800000000000000
+      internalID: -3208925131513096615
       vertices: []
       indices: 
       edges: []

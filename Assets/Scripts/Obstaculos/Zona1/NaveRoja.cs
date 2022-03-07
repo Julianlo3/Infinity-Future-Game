@@ -18,6 +18,11 @@ public class NaveRoja : MonoBehaviour
 
     void Update()
     {
+        if (naves.Count == 3)
+        {
+            naveNueva = false;
+        }
+
         if (fondosManager.SeleccionFondo == 1)
         {
             if (gameManager.start == true && gameManager.gameOver == false)

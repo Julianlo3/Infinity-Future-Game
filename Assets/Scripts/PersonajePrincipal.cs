@@ -11,7 +11,6 @@ public class PersonajePrincipal : MonoBehaviour
     public float dirX;
     public GameManager gameManager;
     Vector3 posicionInicial;
-
     void Start()
     {
         speed = 0.2f;
@@ -24,7 +23,7 @@ public class PersonajePrincipal : MonoBehaviour
 
     void Update()
     {
-
+ 
         if (gameManager.gameOver == true && Input.GetKeyDown(KeyCode.X))
         {
             Destroy(gameObject);

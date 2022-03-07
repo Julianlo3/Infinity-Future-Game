@@ -106,13 +106,11 @@ public class Escenario : MonoBehaviour
             parar = 1;
         }
 
-        Bandera.transform.position = Bandera.transform.position + new Vector3((gameManager.velocidadSuelo*-1), 0, 0) * Time.deltaTime * 1f * parar;
+        Bandera.transform.position = Bandera.transform.position + new Vector3((gameManager.velocidadSuelo*-1), 0, 0) * Time.deltaTime * 1.2f * parar;
 
         if ( Bandera.transform.position.x < -10)
         {
-            parar = 0;
-            
-        }
+            parar = 0;        }
 
 
 

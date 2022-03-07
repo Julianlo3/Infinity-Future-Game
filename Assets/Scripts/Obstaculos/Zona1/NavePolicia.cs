@@ -18,6 +18,12 @@ public class NavePolicia : MonoBehaviour
 
     void Update()
     {
+        if(Policias.Count == 3)
+        {
+            policiaNuevo = false;
+        }
+
+
         if (fondosManager.SeleccionFondo == 1)
         {
             if (gameManager.start == true && gameManager.gameOver == false)

@@ -6,18 +6,22 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	//--------------------
+	public Text nuevorecord;
 	public Escenario escenario;
 	public GameObject Muerte;
 	public GameObject MenuGameOver;
+	public Puntuacion puntuacion;
 	public bool enfriamientoVelocidad =true;
 	public bool gameOver = false;
 	public bool start = false;
 	public float velocidadFondo;
 	public float velocidadSuelo;
 	public float velociadObstaculo;
+	public AudioSource audio;
 	//----------------------
     void Start()
 	{
+		audio.Play ();
 		velocidadFondo = 0.3f;
 		velocidadSuelo = 1;
 		velociadObstaculo = 1;
@@ -41,6 +45,7 @@ public class GameManager : MonoBehaviour
 		}
 		if (gameOver == true)
 		{
+			audio.Stop();
 			MenuGameOver.SetActive(true);
 			if (Input.GetKeyDown(KeyCode.X))
 			{
