@@ -13,6 +13,7 @@ public class Puntuacion : MonoBehaviour
     public int distancia;
     public bool enfriamientoPuntaje;
     public AudioSource audio;
+
     void Start()
     {
         audio.Stop();
@@ -30,7 +31,7 @@ public class Puntuacion : MonoBehaviour
             PlayerPrefs.SetInt("GuardarPuntaje", record);
         }
 
-        if( distancia == record-1)
+        if( distancia == record-1 )
         {
             audio.Play();
         }
