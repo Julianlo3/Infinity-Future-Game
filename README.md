@@ -2,6 +2,11 @@
  Juego tipo endless Runner con tematica futurista. Su estilo visual es basado en neones y colores grisaseos, azules y morados.
  Este juego fue creado por: Elkin Ariel Morillo, Andres Felipe Sandino Gomez y Julian Rojas Lopez
  
+ ----------------------------------------------------------------------
+ Link del juego en itch.io para poder jugarlo desde el navegador:
+ https://julianlo14.itch.io/infinity-future
+ ----------------------------------------------------------------------
+ 
  Links correspondientes a los assets que usamos:
  - Personaje: https://ryder-studios-game-assets.itch.io/cute-animated-robot-character
  - Primer fondo:  https://ansimuz.itch.io/warped-city
