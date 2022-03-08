@@ -14,7 +14,7 @@ public class PersonajePrincipal : MonoBehaviour
     void Start()
     {
         speed = 0.2f;
-        fuerzaSalto = 8;
+        fuerzaSalto = 25;
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         transform.position = (new Vector3(-7.64f, -3.36f, -2));
@@ -23,7 +23,7 @@ public class PersonajePrincipal : MonoBehaviour
 
     void Update()
     {
- 
+
         if (gameManager.gameOver == true && Input.GetKeyDown(KeyCode.X))
         {
             Destroy(gameObject);

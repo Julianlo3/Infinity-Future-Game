@@ -35,7 +35,7 @@ public class NavePolicia : MonoBehaviour
                         Policias.Add(Instantiate(Policia, new Vector2(12 + i, 6), Quaternion.identity));
                         numeroPolicia += 1;
                         policiaNuevo = false;
-                        Invoke("enfriamiento", 60);
+                        Invoke("enfriamiento", 80);
                     }
                 }
             }

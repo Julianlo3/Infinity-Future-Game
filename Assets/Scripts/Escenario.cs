@@ -29,10 +29,9 @@ public class Escenario : MonoBehaviour
         nuevoRecord = false;
         Bandera.transform.position = new Vector3(12, 5);
         Techo.transform.position = new Vector2(-4.4f, 5.5f);
-        Limite1.transform.localScale = new Vector2(1, 3);
-        Limite.transform.position = new Vector2(-10.5f, 0);
-        Limite1.transform.localScale = new Vector2(1,10);
-        Limite1.transform.localScale = new Vector2(8, -6);
+        Limite.transform.position = new Vector2(-12, 0);
+        Limite1.transform.localScale = new Vector2(2, 5);
+        Limite1.transform.position = new Vector2(0, -7.5f);
         YSuelo = -5;
     }
     void Update()

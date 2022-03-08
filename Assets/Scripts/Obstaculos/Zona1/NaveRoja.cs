@@ -31,10 +31,10 @@ public class NaveRoja : MonoBehaviour
                 {
                     for (int i = 0; i < 1; i++)
                     {
-                        naves.Add(Instantiate(naveroja, new Vector2(12 + i, 6), Quaternion.identity));
+                        naves.Add(Instantiate(naveroja, new Vector2(12 + i, 6.5f), Quaternion.identity));
                         numeroNave += 1;
                         naveNueva = false;
-                        Invoke("enfriamiento", 100);
+                        Invoke("enfriamiento", 110);
                     }
                 }
             }
