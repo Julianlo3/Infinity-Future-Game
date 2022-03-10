@@ -97,8 +97,7 @@ public class Escenario : MonoBehaviour
             }
         }
 
-    
-
+   
         if(puntuacion.distancia == puntuacion.record - 20)
         {
             Bandera.transform.position = new Vector3(10, 0, -2);
